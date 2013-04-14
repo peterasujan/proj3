@@ -94,7 +94,7 @@ void sgemm( int m, int n, int d, float *A, float *C )
 		first6 = _mm_loadu_ps(a);
 		a+=n;
 		first7 = _mm_loadu_ps(a);
-		c += 4;
+ 		c += 4;
 		result = _mm_mul_ps(first, second);
 		result1 = _mm_mul_ps(first1, second1);
 		result2 = _mm_mul_ps(first2, second2);
